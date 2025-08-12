@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main()
+{
+  stack<int>a;
+  a.push(1);
+  a.push(2);
+  a.push(3);
+
+  if(a.empty()) cout<<"Stack is empty"<<endl;
+  else cout<<"Not Empty"<<endl;
+
+  cout<<a.size()<<endl;
+  cout<<a.top()<<endl;
+  a.pop();
+
+  while(!a.empty()){
+    cout<<a.top()<<" ";
+    a.pop();
+  }
+  cout<<endl;
+}
